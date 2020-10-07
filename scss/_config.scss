@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url("../images/bg-intro-desktop.png") center center no-repeat
+    fixed;
+  background-color: $red;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+}

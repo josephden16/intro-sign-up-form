@@ -1,0 +1,104 @@
+@media screen and (max-width: 1228px) {
+  .container {
+    margin: 80px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50px;
+    margin: 30px;
+    &__intro {
+      margin: auto;
+      text-align: center;
+      &__head {
+        font-weight: 800;
+        font-size: 2.6rem;
+        margin-bottom: 12px;
+        width: 80%;
+        margin: auto;
+      }
+      &__body {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 478px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url("../images/bg-intro-mobile.png") center center no-repeat
+      fixed;
+    background-color: $red;
+  }
+
+  .container {
+    margin: 20px;
+    &__intro {
+      margin: auto;
+      text-align: center;
+      &__head {
+        font-weight: 800;
+        font-size: 2.1rem;
+        margin-bottom: 12px;
+        width: 90%;
+        margin: 20px auto;
+      }
+      &__body {
+        width: 90%;
+        margin: 20px auto;
+      }
+    }
+    &__form {
+      width: auto;
+      margin: auto;
+      &__heading {
+        background: $blue;
+        padding: 20px 12px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 15px;
+        box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2);
+        p {
+          width: 80%;
+          margin: auto;
+        }
+      }
+      &__form {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 40px;
+        box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.2);
+        &__field {
+          margin-bottom: 18px;
+          input {
+            padding: 16px 0;
+            padding-left: 16px;
+            border-radius: 4px;
+            font-weight: 700;
+            border: 1px solid $grayishBlue;
+            transition: border 200ms ease-out;
+            outline: none;
+            color: $darkBlue;
+            font-size: 16px;
+            &:focus {
+              border: 1px solid $darkBlue;
+            }
+          }
+        }
+        button {
+          padding: 16px 18px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
